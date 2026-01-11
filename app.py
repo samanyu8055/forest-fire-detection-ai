@@ -4,7 +4,6 @@ import cv2
 import joblib
 
 st.set_page_config(page_title="Forest Fire Detection", layout="centered")
-
 st.title("🔥 Forest Fire Detection AI")
 
 # Load model
