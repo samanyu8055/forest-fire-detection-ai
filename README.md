@@ -1,4 +1,4 @@
-# 🔥 Forest Fire Detection AI
+# 🔥 Forest Fire Detection AI Model
 
 A web app that detects forest fires from images using a Convolutional Neural Network (CNN), built with Keras/TensorFlow and deployed via Streamlit.
 
