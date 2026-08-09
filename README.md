@@ -1,4 +1,4 @@
-# 🔥 Forest Fire Detection AI Model
+  # 🔥 Forest Fire Detection AI Model
 
 A web app that detects forest fires from images using a Convolutional Neural Network (CNN), built with Keras/TensorFlow and deployed via Streamlit.
 
@@ -22,8 +22,8 @@ This project uses deep learning to classify images as containing fire or not, ai
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/samanyu8055/forest-fire-detection-ai.git
-cd forest-fire-detection-ai
+git clone https://github.com/samanyu8055/forest-fire-detection-ai-model.git
+cd forest-fire-detection-ai-model
 pip install -r requirements.txt
 ```
 
@@ -36,3 +36,12 @@ streamlit run app.py
 Upload an image and the model will predict whether it shows a fire.
 
 ## 📁 Project Structure
+
+```
+forest-fire-detection-ai-model/
+├── app.py
+├── fire_detector_model.keras
+├── requirements.txt
+├── runtime.txt
+└── README.md
+```
