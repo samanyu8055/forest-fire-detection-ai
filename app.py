@@ -19,8 +19,8 @@ if uploaded is not None:
     img = np.array(image)
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
     img = cv2.resize(img, (64,64))
-    img = img.astype("uint8")
-    img = img.flatten().reshape(1,-1)
+    img = img.astype("float32") / 255.0
+    img = img.flatten().reshape(1, -1)
 
     with st.spinner("Analyzing image..."):
         decision = model.decision_function(img)[0]
