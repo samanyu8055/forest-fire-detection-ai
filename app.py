@@ -24,9 +24,10 @@ if uploaded is not None:
 
     with st.spinner("Analyzing image..."):
         decision = model.decision_function(img)[0]
+        confidence = 1 / (1 + np.exp(-decision))  
 
     if decision > 0:
-        st.error("🔥 FIRE DETECTED")
+        st.error(f"🔥 FIRE DETECTED — Confidence: {confidence*100:.1f}%")
     else:
-        st.success("🌲 NO FIRE")
+        st.success(f"🌲 NO FIRE — Confidence: {(1-confidence)*100:.1f}%")
  
