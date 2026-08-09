@@ -14,6 +14,9 @@ This project uses deep learning to classify images as containing fire or not, ai
 - **Input:** Uploaded image
 - **Output:** Binary classification (Fire / No Fire)
 
+## 🔄 Model Status
+This model is actively being retrained for improved accuracy using data augmentation techniques (rotation, flipping, zoom) to reduce false positives and better generalize to real-world images.
+
 ## 🛠️ Tech Stack
 - Python
 - TensorFlow / Keras
@@ -45,3 +48,10 @@ forest-fire-detection-ai-model/
 ├── runtime.txt
 └── README.md
 ```
+
+## ⚠️ Limitations
+- Trained on a relatively small dataset, so accuracy on unseen or unusual images may vary
+- May confuse fire with visually similar things like sunsets, red/orange lighting, or campfires
+- Performance can drop on blurry, low-resolution, or poorly lit images
+- Currently supports single-image classification only — no real-time video or multi-frame analysis
+- Binary output only (Fire / No Fire) — does not estimate fire size, severity, or location within the image
